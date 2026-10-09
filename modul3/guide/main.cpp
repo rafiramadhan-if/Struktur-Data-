@@ -1,0 +1,24 @@
+#include <iostream>
+#include "titik.h" 
+#include <temempik>    
+
+using namespace std;
+
+int main() {
+    titik tA, tB; 
+
+    cout << "--- Input Titik Pertama ---" << endl;
+    inputTitik(tA);
+
+    cout << "--- Input Titik Kedua ---" << endl;
+    inputTitik(tB);
+
+    cout << "\nHasil Rekap Kordinat: " << endl;
+    tampilTitik(tA);
+    tampilTitik(tB);
+
+    float jarak = hitungJarak(tA, tB);
+    cout << "Jarak antara kedua titik: " << jarak << endl;
+
+    return 0;
+}
